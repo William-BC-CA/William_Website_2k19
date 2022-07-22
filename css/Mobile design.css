@@ -1,0 +1,48 @@
+@media (max-width: 600px) {
+	
+	.container{
+		/* Redefine the grid into a single column layout. */
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"Home"
+			"Shop"
+			"Sell"
+			"Recruit";
+				grid-gap: 0px;
+	}
+}
+
+	header {
+	background-color: #ccc;
+
+	}
+
+	header ul {
+		display: none;
+	}
+
+	header #menu {
+	display: block;
+	padding: 5px;
+	font-size: 1.4em;
+	margin-bottom: 10px;
+	}
+
+
+	section {
+		background-color: #ddd;
+	}
+
+	section h2 {
+		padding: 10px;
+		margin-bottom: 0;
+	}
+
+	section p {
+		padding: 20px;
+		margin-top: 0;
+	}
+
+	section img {
+		display: none
+	}

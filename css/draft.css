@@ -1,0 +1,14 @@
+.container {
+	display: flex;
+}
+
+@media all and (max-width: 600px) {
+
+	.container {
+		flex-wrap: wrap;
+	}
+
+	.container > li {
+		flex-basis: 50%;
+	}
+}

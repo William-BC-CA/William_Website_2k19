@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+<script>
+	function validateForm()
+
+	{
+		var x = document.forms["Sell Product"]["pname"].value;
+		if (x == null || x =="")
+			{
+			alert("You must enter your the name of your product!");
+			return false;
+			
+		}
+
+		var y = document.forms["Sell Product"]["pyear"].value;
+		if (y == null || y == "")
+			{
+			alert("We need the year of your product!");
+			return false;
+
+		}
+
+		var z = document.forms["Sell Product"]["pcondition"].value;
+		if (z == null || z == "")
+			{
+			alert("The condition of your product must be filled out!");
+			return false;
+
+			} else {
+			alert("Success!")
+		}
+
+	}
+</script>
+	
+	<!--META DATA-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<!--Reference Links-->
+	<link rel="stylesheet" type="text/css" href= "css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body background=img/Products.jpg>
+
+	<font color="#00BFFF"><h1>Welcome to Super Mega Sales!</font></h1>
+	<font color="#00BFFF"><h1>We wish you have a great time here buying and selling stuff!</font></h1>
+
+	<!--<div class="flex-container">
+		<div id="button"><a href="index.html">Home</a></div>
+		<div id="button"><a href="4.html">Shop</a></div>
+		<div id="button"><a href="3.html">Sell</a></div>
+		<div id="button"><a href="2.html">Recruit</a></div>
+	</div>-->
+<ul class="navigation">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="4.html">Shop</a></li>
+  <li><a href="3.html">Sell</a></li>
+  <li><a href="2.html">Recruit</a></li>
+</ul>
+		<!--<div id="my-signin2">Login</div>-->
+	
+	<font color="white"><p>Sell your product</p></font>
+	<form name="Sell Product" action="3-2.html" onsubmit="return validateForm()" method="post">
+		<font color="white">Product Name: <input type="text" name="pname"></font>
+		<font color="white">Product Year: <input type="text" name="pyear"></font>
+		<font color="white">Product Condition: <input type="text" name="pcondition"></font>
+		<input type="submit" value="Submit">
+	</form>
+	
+	<font color="black"><p>©2018-2019, 2016 Notoriex Legacy Inc. All Rights Reserved<p></font>
+	<!--<script>
+	function myfunction() {
+		alert("Your product has been put into review. Make sure send a picture of your product to shopsupport@supermegasales.com")
+	}
+	</script>-->
+
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<head>
+<script>
+	function validateForm()
+
+	{
+		var x = document.forms["Recruit"]["email"].value;
+		if (x == null || x == "")
+			{
+			alert("You must enter your email or else how can we get back to you?!");
+			return false;
+			
+		}
+
+		var y = document.forms["Recruit"]["Qone"].value;
+		if (y == null || y == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q1!");
+			return false;
+		}
+
+		var z = document.forms["Recruit"]["Qtwo"].value;
+		if (z == null || z == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q2!");
+			return false;
+
+		}
+
+		var a = document.forms["Recruit"]["Qthree"].value;
+		if (a == null || a == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q3!");
+			return false;
+
+		}
+
+		var b = document.forms["Recruit"]["Qfour"].value;
+		if (b == null || b == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q4!");
+			return false;
+
+		}
+
+		var c = document.forms["Recruit"]["Qfive"].value;
+		if (c == null || c == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q5!");
+			return false;
+
+		}
+		
+		var d = document.forms["Recruit"]["Qsix"].value;
+		if (d == null || d == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q6!");
+			return false;
+
+		}
+
+		var e = document.forms["Recruit"]["Qseven"].value;
+		if (e == null || e == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q7!");
+			return false;
+			
+		}
+
+		var f = document.forms["Recruit"]["Qeight"].value;
+		if (f == null || f == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q8!");
+			return false;
+
+		}
+
+		var g = document.forms["Recruit"]["Qnine"].value;
+		if (g == null || g == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q9!");
+			return false;
+
+		}
+
+		var h = document.forms["Recruit"]["Qten"].value;
+		if (h == null || h == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q10!");
+			return false;	
+		
+		}
+
+		var i = document.forms["Recruit"]["Qeleven"].value;
+		if (i == null || i == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q11!");
+			return false;
+
+		}
+
+		var j = document.forms["Recruit"]["Qtwelve"].value;
+		if (j == null || j == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q12!");
+			return false;
+			
+		}
+
+		var k = document.forms["Recruit"]["Qthirteen"].value;
+		if (k == null || k == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q13!");
+			return false;
+
+		}
+
+		var l = document.forms["Recruit"]["Qfourteen"].value;
+		if (l == null || l == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q14!");
+			return false;
+		}
+
+		var m = document.forms["Recruit"]["Qfifteen"].value;
+		if (m == null || m == "")
+			{
+			alert("FORM ERROR!!! MUST ANSWER Q15!");
+			return false;
+
+			} else {
+			alert("Success!");
+		}
+
+	}
+</script>
+
+	<!--META DATA-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<!--Reference Links-->
+	<link rel="stylesheet" type="text/css" href= "css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body background=img/PlateUtensils.jpg>
+	
+	<font color="#00BFFF"><h1>Welcome to Super Mega Sales!</h1></font>
+	<font color="#00BFFF"><h1>We wish you have a great time here buying and selling stuff!</h1></font>
+
+	<!--<div class="flex-container">
+		<div id="button"><a href="index.html">Home</a></div>
+		<div id="button"><a href="4.html">Shop</a></div>
+		<div id="button"><a href="3.html">Sell</a></div>
+		<div id="button"><a href="2.html">Recruit</a></div>
+	</div>-->
+<ul class="navigation">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="4.html">Shop</a></li>
+  <li><a href="3.html">Sell</a></li>
+  <li><a href="2.html">Recruit</a></li>
+</ul>
+	
+	<h1>Super Mega Sales Job Form</h1>
+	<p>If you are interested, you can apply for a job at Super Mega Sales! If there's a category that doesn't fit you, put N/A. Please DO NOT LEAVE ANYTHING BLANK! Thank you for your time!</p>
+	<h1>Section 1 of 4. Basic Information<h1>
+	<form name="Recruit" action="index.html" onsubmit="return validateForm()" method="post">
+		<p>Email: <input type="text" name="email"></p>
+		<p>Do you have any work experience?: <input type="text" name="Qone"></p>
+		<p>How old are you?: <input type="text" name="Qtwo"></p>
+		<p>Have you had any possession with drugs? (Please be honest!): <input type="text" name="Qthree"></p>
+		
+		<h1>Section 2 of 4. Have had a job or volunteered</h1>
+		<p>If yes, what job did you apply for?: <input type="text" name="Qfour"></p>
+		<p>Did you like your job or you want to join Super Mega Sales because you hated your previous job?: <input type="text" name="Qfive"></p>
+		<p>Did you like volunteering?: <input type="text" name="Qsix"></p>
+		<p>If yes, would you want to take the same occupation but for money? (if possible): <input type="text" name="Qseven"></p>
+		
+		<h1>Section 3 of 4. Never had a job nor work experience</h1>
+		<p>If no, why would you want to apply for this job?: <input type="text" name="Qeight"></p>
+		<p>What made you want to do this job?: <input type="text" name="Qnine"></p>
+		<p>Where did you find this job?: <input type="text" name="Qten"></p>
+		
+		<h1>Section 4 of 4. Questions</h1>
+		<p>Do you expect yourself to work at Super Mega Sales forever?: <input type="text" name="Qeleven"></p>
+		<p>Have you ever tried using Super Mega Sales or contacted shop support?: <input type="text" name="Qtwelve"></p>
+		<p>Do you know what the hazards are working at Super Mega Sales?: <input type="text" name="Qthirteen"></p>
+		<p>If yes, explain.: <input type="text" name="Qfourteen"></p>
+		<p>Do you know what you will be going through at Super Mega Sales?: <input type="text" name="Qfifteen"></p>
+		<p><input type="submit" value="Submit"></p>
+	</form>
+
+	<p>©2018-2019, 2016 Notoriex Legacy Inc. All Rights Reserved<p>
+	
+		
+	
+		
+	
+	
+		
+
+
+</body>
+
+</html>
+	
